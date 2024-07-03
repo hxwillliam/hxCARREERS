@@ -1,0 +1,36 @@
+aside{
+    position: fixed;
+    background-color: #2e2f2f;
+    width: 20%;
+    color: aliceblue;
+    border-radius: 5%;
+    border-radius: 8px;
+    padding: 10px;
+    margin-left: 10px;
+    
+}
+aside input {
+    background-color: #333; 
+    color: #a29d9d;
+    padding: 3px;
+    border: 1px solid #444;
+    border-radius: 5px;
+}
+aside button, aside select {
+    background-color: #333;
+    padding: 10px;
+    color: #8b8686; 
+    border: 1px solid #444; 
+    padding: 5px; 
+    border-radius: 5px;
+    margin-top: 3%;
+}
+
+aside button:hover, aside select:hover {
+    background-color: #444; 
+}
+
+aside #location{
+    width:25%;
+    margin-top: 2%;
+}

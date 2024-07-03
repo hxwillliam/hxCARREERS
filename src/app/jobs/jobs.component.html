@@ -1,0 +1,34 @@
+<section>
+
+    @if (jobs?.length>3) {
+        @for (job of jobs; track job){
+            <article>
+                <span>
+                    <img [src]="'https://img.logo.dev/' + job.company.name + '.com?token=pk_epQfRYjRSoyBCQG7QiWMAA'" alt="Logo">
+                    <h2>{{ job.name }}</h2>
+                </span>
+                <!-- <p>{{ job.contents }}</p> -->
+                <span>
+                    <p>
+                        role: {{job.categories[0].name}}
+                    </p>
+                    <p>
+                        seniority: {{job.levels[0].name}}
+                    </p>
+                    <p>
+                        headquarters: {{job.locations[0].name}}
+                    </p>
+                </span>
+                <a href="{{ job.refs.landing_page }}">
+
+                    <button>view job</button>
+                </a>
+
+            </article>
+        }
+    }
+
+@else {
+    <p>Not enough Jobs Available</p>
+}
+</section>
